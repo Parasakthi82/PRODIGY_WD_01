@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page Routing with Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                Logo
+            </div>
+            <div class="nav-container">                
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+                    <li><a href="#" class="nav-link"  data-target="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-target="services">Services</a></li>
+                    <li><a href="#"  class="nav-link" data-target="pricing">Pricing</a></li>
+                    <li><a href="#"  class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    &#9776;
+                </div>
+                <div class="nav-toggle-x" id="nav-toggle-x">
+                    &#x2716;
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="down-menu">
+        <div class="nav-links-manu" id="nav-links-manu">
+            <div class="list" ><button href="#" class="nav-link" data-target="home">Home</button></div>
+            <hr class="solid">
+            <div class="list"><button href="#" class="nav-link" data-target="about">About</button></div>
+            <hr class="solid">
+            <div class="list"><button href="#" class="nav-link " data-target="services">Services</button></div>
+            <hr class="solid">
+            <div  class="list"><button href="#" class="nav-link" data-target="pricing">Pricing</button></div>
+            <hr class="solid">            
+            <div  class="list"><button href="#" class="nav-link" data-target="contact">Contact</button></div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="home" class="page active"><h1 id="one">HOME</h1>
+            <p>A cafe is a coffee shop, or a small
+            Host an influencer event.restaurant where coffee is served. <br>Your neighborhood cafe might be a good place to get a piece of pie and a cup of coffee.</p>
+            </div>
+        <div id="about" class="page"><h1 id="one">ABOUT</h1>
+            <p>PraZox is an Australian style cafe<br>
+            Host an influencer event.that serves simple, natural food – including Vegan and Gluten Free options – accompanied by authentic espresso coffee.</p>
+            </div>
+        <div id="services" class="page"><h1 id="one">SERVICES</h1>
+            <p>Leverage your business selling point. <br>
+                Mix in offline marketing strategies such as promotions and local partnerships. <br>
+                Run a Facebook advertising campaign on social media. ...<br>
+            </p>
+        </div>
+        <div id="pricing" class="page"><h1 id="one">PRICING</h1>
+            <p> Ideal beverage and food costs for cafes are typically 15-25% per item,depending on the ingredients.<br>So,food cost percentage pricing involves using this important metric to guide pricing decisions.</p>
+        </div>
+        <div id="contact" class="page"><h1 id="one">CONTACT</h1>
+            <p>For more information,contact the city's tourism office. We were able to contact them by.<br> Our Employee contacted everyone on the list. </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

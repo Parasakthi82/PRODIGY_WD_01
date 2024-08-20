@@ -1,0 +1,271 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    }
+*{
+    margin: 0;
+    outline: none;
+    padding: 0%;
+}
+ .logo{
+    color:brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    margin-left: 20px;              
+    align-items: center;
+    font-size: 2em;
+}
+.navbar{
+    background-color:rgb(207, 202, 202);
+    display: flex;
+    justify-content:space-between;
+    line-height: 2.5;
+    padding-right: 15px;
+}
+.nav-container {
+    display: flex;   
+    align-items: center;    
+}
+.nav-toggle {
+    display:none;
+    cursor: pointer;  
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    color:white ;
+    background-color:brown;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+.dropdown-menu li {
+    width: 200px;
+}
+.dropdown-menu li a {
+    padding: 0.5em 1em;
+    display: block;
+}
+.dropdown-menu li a:hover {
+    background-color: brown;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: brown;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+.nav-links-manu{
+    display: none;
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    background-color: brown;
+    color:white;
+}
+.hr.solid {
+    border-top: 3px solid #bbb;
+    width: 100%;
+  }
+.nav-toggle-x{
+    display: none;
+}
+.down-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color:  rgb(208, 95, 95);
+}   
+.list button{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top:2px;
+    padding: 2px;
+    background-color: transparent;
+    color:white;
+}
+.list{
+    position: relative;
+    width: 100%;
+}
+#home{
+    align-content: center;
+    background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+    url(antique-cafe-bg-01.jpg) no-repeat center/cover;
+    width: 100%;
+    background-size: cover;
+    height: 85vh;
+}
+#about{
+    align-content: center;
+    width: 100%;
+    background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+    url(antique-cafe-bg-02.jpg) no-repeat center/cover;
+    height: 85vh;
+}
+#services{
+    align-content: center;
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+    url(antique-cafe-bg-03.jpg) no-repeat center/cover;
+}
+#pricing{
+    align-content: center;
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+    url(antique-cafe-bg-04.jpg) no-repeat center/cover;
+}
+#contact{
+    align-content: center;
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+    url(antique-cafe-bg-05.jpg) no-repeat center/cover;
+}
+#one{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-left: 40%;
+    margin-top: 10px;
+    align-content: center;
+    color:whitesmoke;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0);
+}
+ p{
+     color:white;
+     align-content: center;
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size:2rem;
+     margin-top: 25px;
+     text-shadow: 5px 10px 5px rgba(0, 0, 0, 0);
+ }  
+@media (max-width:768px) {
+    .nav-toggle {
+        display:block;
+        padding-right: 10px;
+        font-size: larger;
+        font-weight:bold;      
+    }
+    .logo{
+        line-height: 2.5;
+            }
+    .nav-toggle-x{
+        display: none;
+        padding-right: 10px;
+        font-size: larger;
+        font-weight:bold;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+        .nav-links-manu.show {
+        display: block;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    nav ul li {
+        display:block;
+        text-align: center;
+    }
+    
+    .dropdown-menu {
+        position: relative;
+            }
+
+    .dropdown-menu li {
+        width: 100%;
+    }
+    #home{
+        align-content: center;
+        background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+        url(antique-cafe-bg-01.jpg) no-repeat center/cover;
+        width: 100%;
+        background-size: cover;
+        height: 85vh;
+    }
+    #about{
+        width: 100%;
+        background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+        url(antique-cafe-bg-02.jpg) no-repeat center/cover;
+        height: 85vh;
+    }
+    #services{
+       height: 85vh;
+        width: 100%;
+        background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+        url(antique-cafe-bg-03.jpg) no-repeat center/cover;
+    }
+    #pricing{
+                height: 85vh;
+        width: 100%;
+        background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+        url(antique-cafe-bg-04.jpg) no-repeat center/cover;
+    }
+    #contact{
+       
+        height: 85vh;
+        width: 100%;
+        background: linear-gradient(rgba(146, 99, 99, 0.5),rgba(0,0,0,0.5)),
+        url(antique-cafe-bg-05.jpg) no-repeat center/cover;
+    }
+    #one{
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-left: 40%;
+        margin-top:-10%;       
+        color:whitesmoke;
+        
+    }
+     p{
+         color:white;
+         align-content: center;
+         text-align: center;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size:1rem;
+         margin-top: 10px;
+         width: 100%;
+              }  
+ }
